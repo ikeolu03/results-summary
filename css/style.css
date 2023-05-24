@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 800;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'HankenGrotesk';
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: hsl(221, 100%, 96%);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    width: 350px;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.card-top{
+    text-align: center;
+    padding: 2em 0;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    color: hsl(0, 0%, 100%, .5);
+}
+
+.card-top-title,
+.card-body-title{
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+.average-score-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.average-score{
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.total{
+    font-size: 1.25rem;
+}
+
+.average-score,
+.remark{
+    color: hsl(0, 0%, 100%);
+}
+
+.remark{
+    margin: .5em 0;
+}
+
+.text{
+    font-size: 1.5rem;
+    margin: 1em auto;
+    width: 250px;
+}
+
+.card-body{
+    padding: 1.5em;
+}
+
+.course-category{
+    display: flex;
+}
+
+.course{
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: .5em;
+    font-weight: 700;
+}
+
+.card-body-title,
+.course-score{
+    color: hsl(224, 30%, 27%);
+}
+
+.course-score span{
+    color: hsl(224, 30%, 27%, .5);
+}
+
+.icon{
+    margin-right: .5em;
+}
+
+.course-reaction{
+    background-color: hsla(0, 100%, 67%, .1);
+}
+
+.course-memory{
+    background-color: hsla(39, 100%, 56%, .1);
+}
+
+.course-verbal{
+    background-color: hsla(166, 100%, 37%, .1);
+}
+
+.course-visual{
+    background-color: hsla(234, 85%, 45%, .1);
+}
+
+.reaction{
+    color: hsl(0, 100%, 67%);
+}
+
+.memory{
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal{
+    color: hsl(166, 100%, 37%);
+}
+
+.visual{
+    color: hsl(234, 85%, 45%);
+}
+
+.btn{
+    width: 100%;
+    padding: .7em 0;
+    border-radius: 2em;
+    border: none;
+    outline: none;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: .5em 0;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution{
+    font-size: 1.1rem;
+    text-align: center;
+    margin: .5em 0;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 660px){
+    .card{
+        display: flex;
+        width: 600px;
+        border-radius: 1.5em;
+    }
+
+    .card-top{
+        border-radius: 1.5em;
+        padding: 1.5em 0;
+    }
+
+    .card-top,
+    .card-body{
+        width: 50%;
+    }
+
+    .average-score-container{
+        width: 180px;
+        height: 180px;
+        margin: 1.5em auto;
+    }
+
+    .average-score{
+        font-size: 6rem;
+    }
+
+    .text{
+        width: 200px;
+    }
+
+    .attribution{
+        margin: 0;
+    }
+
+}
